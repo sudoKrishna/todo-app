@@ -1,0 +1,22 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "main": "index.js",
+ "scripts": {
+  "start": "concurrently \"npm run server\" \"npm run client\"",
+  "server": "nodemon --watch todos-backed --exec \"node todos-backed/server.js\"",
+  "client": "npm start --prefix tailwindcss4"
+},
+
+  
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^9.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
