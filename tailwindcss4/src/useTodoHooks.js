@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 
 
-const API = 'http://localhost:5000/api/todos';
+const API = process.env.REACT_APP_API_URL || 'http://localhost:5000/api/todos';
+
 
 export default function useTodoHooks() {
   const [input, setInput] = useState('');
